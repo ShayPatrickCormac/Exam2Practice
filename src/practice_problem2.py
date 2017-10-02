@@ -2,8 +2,8 @@
 PRACTICE Test 2, practice_problem 2.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Zijian Huang.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 # Students:
@@ -83,6 +83,8 @@ def practice_problem2a(sequence, delta):
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   5 minutes.
     ####################################################################
+
+
 
 
 def run_test_practice_problem2b():
