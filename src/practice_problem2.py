@@ -200,7 +200,7 @@ def practice_problem2b(sequence):
       :type sequence [str]
     """
     ####################################################################
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #     The testing code is already written for you (above).
     ####################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
@@ -212,8 +212,9 @@ def practice_problem2b(sequence):
     for k in range(len(sequence)):
         s = sequence[k]
         if len(s) == 0:
-            s = sequence[k+1]
-        new_string = new_string + s[0]
+            pass
+        else:
+            new_string = new_string + s[0]
     return new_string
 
 
