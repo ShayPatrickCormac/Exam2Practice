@@ -42,7 +42,7 @@ def main():
 def run_test_practice_problem2a():
     """ Tests the   practice_problem2a  function. """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function.
+    # DONE: 2. Implement this TEST function.
     #   It TESTS the  practice_problem2a  function defined below.
     #   Include at least **   4 reasonable   ** tests.
     #
@@ -55,6 +55,31 @@ def run_test_practice_problem2a():
     print('--------------------------------------------------')
     print('Testing the   practice_problem2a   function:')
     print('--------------------------------------------------')
+
+    # Test 1
+    expected = [8, 9, 10, 11]
+    answer = practice_problem2a([5, 6, 7, 8], 3)
+    print('Test 1 expected:',expected)
+    print('Actual         :',answer)
+
+    # Test 2
+    expected = [11, 12, 13, 14]
+    answer = practice_problem2a([5, 6, 7, 8], 6)
+    print('Test 2 expected:', expected)
+    print('Actual         :', answer)
+
+    # Test 3
+    expected = [14, 15, 16, 17]
+    answer = practice_problem2a([5, 6, 7, 8], 9)
+    print('Test 3 expected:',expected)
+    print('Actual         :',answer)
+
+    # Test 4
+    expected = [16, 17, 18, 19]
+    answer = practice_problem2a([5, 6, 7, 8], 11)
+    print('Test 1 expected:', expected)
+    print('Actual         :', answer)
+
 
 
 def practice_problem2a(sequence, delta):
@@ -76,7 +101,7 @@ def practice_problem2a(sequence, delta):
       :type delta:    int
     """
     ####################################################################
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #     The testing code is already written for you (above).
     ####################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
@@ -84,7 +109,10 @@ def practice_problem2a(sequence, delta):
     #    TIME ESTIMATE:   5 minutes.
     ####################################################################
 
-
+    new_seq = []
+    for k in range(len(sequence)):
+        new_seq = new_seq + [sequence[k] + delta]
+    return new_seq
 
 
 def run_test_practice_problem2b():
@@ -179,6 +207,14 @@ def practice_problem2b(sequence):
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:   10 minutes.
     ####################################################################
+
+    new_string = ''
+    for k in range(len(sequence)):
+        s = sequence[k]
+        if len(s) == 0:
+            s = sequence[k+1]
+        new_string = new_string + s[0]
+    return new_string
 
 
 # ----------------------------------------------------------------------
