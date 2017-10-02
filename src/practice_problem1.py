@@ -46,7 +46,7 @@ def main():
     run_test_double_then_shrink()
     run_test_reset()
     run_test_steal()
-#     run_test_get_history()
+    run_test_get_history()
     run_test_combined_box()
 
 
@@ -110,6 +110,7 @@ class Box(object):
         self.originalvolume = volume
         self.originalcontent = self.contents
         self.stuff_to_return = ''
+        self.string = []
 
     def append_string(self, additional_contents):
         """
@@ -374,6 +375,7 @@ class Box(object):
         #    DIFFICULTY:      4
         #    TIME ESTIMATE:   5 minutes.
         # --------------------------------------------------------------
+        self.string = self.string + [self.contents]
         self.contents = self.originalcontent
         self.volume = self.originalvolume
 
@@ -453,7 +455,7 @@ class Box(object):
         #    DIFFICULTY:      6
         #    TIME ESTIMATE:   5 minutes.
         # --------------------------------------------------------------
-        history = []
+        return self.string
 
 
 
