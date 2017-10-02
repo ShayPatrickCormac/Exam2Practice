@@ -271,7 +271,7 @@ def practice_problem3b(sequence):
       :type: sequence: list    or tuple or string
     """
     ####################################################################
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #     The testing code is already written for you (above).
     #
     # IMPLEMENTATION REQUIREMENT:  You are NOT allowed to use the
@@ -284,12 +284,13 @@ def practice_problem3b(sequence):
     #    TIME ESTIMATE:   8 minutes.
     ####################################################################
 
-    for k in range(len(sequence)):
+    for k in range(len(sequence)-1):
         s = sequence[len(sequence)-1]
         if sequence[k] == s:
             return True
         else:
-            return False
+            pass
+    return False
 
 
 def run_test_practice_problem3c():
